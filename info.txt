@@ -1,0 +1,40 @@
+# Liquid Staking Tokens (LSTs) dApp
+
+## Overview
+This proposal outlines the development of a decentralized application (dApp) that enables users to mint and redeem Liquid Staking Tokens (LSTs) on the Bifrost network using the Sigpass wallet. The dApp integrates seamlessly with the Moonbeam ecosystem, allowing users to interact with xcDOT, GLMR, and xcASTR tokens. The project leverages the Sigpass wallet, a passkey-based wallet solution, to provide a secure and user-friendly experience for managing digital assets.
+
+## Problem Statement
+- **Complexity of Wallet Management**: Traditional wallet solutions often require users to manage seed phrases or private keys, which can be intimidating for non-technical users.
+- **Liquidity Challenges**: Users staking assets like DOT or GLMR face liquidity issues, as their assets are locked in staking contracts.
+- **Cross-Chain Interoperability**: Users need a seamless way to interact with assets across different chains (e.g., Moonbeam, Bifrost) without relying on centralized intermediaries.
+
+This project addresses these challenges by providing a user-friendly interface for minting and redeeming LSTs while leveraging the security and simplicity of the Sigpass wallet.
+
+## Solution
+The proposed solution is a dApp that allows users to:
+- **Mint LSTs**: Convert xcDOT, GLMR, or xcASTR into their liquid staking equivalents (e.g., xcvDOT, xcvGLMR, xcvASTR) on the Bifrost network.
+- **Redeem LSTs**: Convert liquid staking tokens back into their original assets.
+- **Seamless Wallet Integration**: Use the Sigpass wallet for secure, passkey-based authentication and transaction signing.
+- **Cross-Chain Compatibility**: Interact with assets across Moonbeam and Bifrost networks.
+
+## Technical Implementation
+The dApp is built using the following technologies:
+
+### Frontend
+- **Framework**: React.js
+- **UI Library**: Shadcn UI
+- **State Management**: Jotai
+- **Form Handling**: React Hook Form with Zod validation
+- **Wallet Integration**: RainbowKit for EVM wallets and Sigpass for passkey-based wallets
+
+### Backend
+- **Smart Contracts**: Moonbeam SLPX contract for minting/redeeming LSTs
+- **Token Contracts**: xcDOT, GLMR, and xcASTR ERC20 contracts
+- **Chain Interaction**: Wagmi and Viem libraries for EVM chain interactions
+
+## Getting Started
+To run this project locally, follow the steps below:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
