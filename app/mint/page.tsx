@@ -1,9 +1,5 @@
 import Navbar from "@/components/navbar"
-import Hero from "@/components/hero"
-import Features from "@/components/features"
-import CTA from "@/components/cta"
 import Footer from "@/components/footer"
-import SendTransaction from "@/components/send-transaction"; 
 import MintRedeem from "@/components/mint-redeem-lst-bifrost"
 
 export default function Home() {
